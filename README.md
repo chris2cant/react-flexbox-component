@@ -2,7 +2,23 @@
 
 React Flexbox Component is a library to use flexbox css style to your components with real gutter and xRay option.
 
-### Installing
+## Table of Content
+
+- [Installing](#installing)
+- [Getting started](#getting-started)
+- [Usage](#usage)
+  * [Props](#props)
+    + [Column width](#column-width)
+    + [Flex Grow](#flex-grow)
+    + [Gutter](#gutter)
+    + [Align items](#align-items)
+    + [Align content](#align-content)
+    + [Flex wrap](#flex-wrap)
+    + [Justify content](#justify-content)
+    + [xRay](#xray)
+
+
+## Installing
 
 ```
 npm install react-flexbox-component
