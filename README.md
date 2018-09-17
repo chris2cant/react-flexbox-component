@@ -85,7 +85,7 @@ Default : null
 <Row>
   <Item grow={1}>Item 1</Item>
   <Item grow={8}>Item 2</Item>
-<Row>
+</Row>
 ```
 
 #### Gutter
@@ -97,7 +97,7 @@ Add a `margin` between boxes in pixel. Allowed for `Row` and `Column` and applie
 <Row gutter={8}>
   <Item>Item 1</Item>
   <Item>Item 2</Item>
-<Row>
+</Row>
 {/* Margin of 16px between Item 3, Row and Div 1 */}
 <Column gutter={16}>
   <Item>Item 3</Item>
@@ -106,7 +106,7 @@ Add a `margin` between boxes in pixel. Allowed for `Row` and `Column` and applie
     <Item>Item 5</Item>
   </Row>
   <div>Div 1</div>
-<Column>
+</Column>
 ```
 
 #### Align items
@@ -119,7 +119,7 @@ Default : `flex-start`
 <Row align="start">
   <Item>Item 1</Item>
   <Item>Item 2</Item>
-<Row>
+</Row>
 ```
 
 
@@ -134,7 +134,7 @@ Default : `flex-start`
 <Row content="start">
   <Item>Item 1</Item>
   <Item>Item 2</Item>
-<Row>
+</Row>
 ```
 
 #### Flex wrap
@@ -150,12 +150,12 @@ Default : null
 <Row wrap="wrap-reverse">
   <Item>Item 1</Item>
   <Item>Item 2</Item>
-<Row>
+</Row>
 {/* flex-wrap: wrap */}
 <Row wrap>
   <Item>Item 3</Item>
   <Item>Item 4</Item>
-<Row>
+</Row>
 ```
 
 #### Justify content
@@ -169,7 +169,7 @@ Default : `flex-start`
 <Row justify="start" xRay>
   <Item>Item 1</Item>
   <Item>Item 2</Item>
-<Row>
+</Row>
 ```
 
 #### xRay
@@ -180,5 +180,5 @@ Display 1px border and background color to help you to visualize your layout and
 <Row xRay>
   <Item>Item 1</Item>
   <Item>Item 2</Item>
-<Row>
+</Row>
 ```
