@@ -12,9 +12,9 @@ npm install react-flexbox-component
 
 ```jsx
 import React, { Component } from 'react'
-import { Row, Item } from 'react-flexbox-component'
+import { Row, Column, Item } from 'react-flexbox-component'
 
-class Component extends Component {
+class MyComponent extends Component {
   render() {
     return (
       <div>
@@ -30,6 +30,8 @@ class Component extends Component {
     )
   }
 }
+
+export default MyComponent;
 ```
 
 ## Usage
