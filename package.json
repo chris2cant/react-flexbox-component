@@ -1,6 +1,6 @@
 {
   "name": "react-flexbox-component",
-  "version": "0.1.4`",
+  "version": "0.1.5",
   "description": "A component for simply use flexbox on your react app",
   "main": "build/index.js",
   "peerDependencies": {
