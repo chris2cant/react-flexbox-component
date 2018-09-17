@@ -27,7 +27,11 @@ const Row = (props) => {
     return null;
   };
 
-  return <RowStyled {...props}>{renderChildren()}</RowStyled>;
+  return (
+    <RowStyled {...props}>
+      {props.xRay ? renderChildren() : props.children}
+    </RowStyled>
+  );
 };
 
 Row.propTypes = propTypes;
