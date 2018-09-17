@@ -61,14 +61,14 @@ Example
 ```jsx
 <Row>
   // Auto width for all props xs sm md lg xl
-  <Item xs>...</Item>
+  <Item xs>Item 1</Item>
 
   // @media (min-width: 0) flex-grow: 2;
-  <Item xs={2}>...</Item>
+  <Item xs={2}>Item 2</Item>
 
   // @media (min-width: 960) {flex-grow: 2};
   // @media (min-width: 1280) {flex-grow: 4};
-  <Item md={2} lg={4}>...</Item>
+  <Item md={2} lg={4}>Item 3</Item>
 </Row>
 ```
 
@@ -81,23 +81,29 @@ Default : null
 
 ```jsx
 <Row>
-  <Item grow={1}>...</Item>
-  <Item grow={8}>...</Item>
+  <Item grow={1}>Item 1</Item>
+  <Item grow={8}>Item 2</Item>
 <Row>
 ```
 
 #### Gutter
 
-Add a `margin` between boxes in pixel. Allowed for `Row` and `Column`
+Add a `margin` between boxes in pixel. Allowed for `Row` and `Column` and applied on direct children.
 
 ```jsx
+// Margin of 8px between Item 1 and Item 2
 <Row gutter={8}>
-  <Item>...</Item>
-  <Item>...</Item>
+  <Item>Item 1</Item>
+  <Item>Item 2</Item>
 <Row>
+// Margin of 16px between Item 3, Row and Div 1
 <Column gutter={16}>
-  <Item>...</Item>
-  <Item>...</Item>
+  <Item>Item 3</Item>
+  <Row>
+    <Item>Item 4</Item>
+    <Item>Item 5</Item>
+  </Row>
+  <div>Div 1</div>
 <Column>
 ```
 
@@ -109,8 +115,8 @@ Default : `flex-start`
 
 ```jsx
 <Row align="start">
-  <Item>...</Item>
-  <Item>...</Item>
+  <Item>Item 1</Item>
+  <Item>Item 2</Item>
 <Row>
 ```
 
@@ -124,48 +130,53 @@ Default : `flex-start`
 
 ```jsx
 <Row content="start">
-  <Item>...</Item>
-  <Item>...</Item>
+  <Item>Item 1</Item>
+  <Item>Item 2</Item>
 <Row>
 ```
 
 #### Flex wrap
 
 Change `flex-wrap` attribute.
-You can the prop alone.
+You can use the prop alone.
 Prop : `wrap`
 Value : `no-wrap` | `wrap` | `wrap-reverse`
 Default : null
 
 ```jsx
+// flex-wrap: wrap-reverse
 <Row wrap="wrap-reverse">
-  <Item>...</Item>
-  <Item>...</Item>
+  <Item>Item 1</Item>
+  <Item>Item 2</Item>
 <Row>
-
+// flex-wrap: wrap
 <Row wrap>
-  <Item>...</Item>
-  <Item>...</Item>
+  <Item>Item 3</Item>
+  <Item>Item 4</Item>
 <Row>
 ```
 
 #### Justify content
 
 Change `justify-content` attribute.
+Prop: `justify`
 Value : `start` | `flex-start` | `end` | `flex-end` | `space-between` | `space-around` | `space-evenly`
 Default : `flex-start`
 
 ```jsx
-<Row align="start" xRay>
-  <Item>...</Item>
-  <Item>...</Item>
+<Row justify="start" xRay>
+  <Item>Item 1</Item>
+  <Item>Item 2</Item>
 <Row>
 ```
 
 #### xRay
+
+Display 1px border and background color to help you to visualize your layout and their childs
+
 ```jsx
-xRay : Display border and color to visualize your divs and theire childs
 <Row xRay>
-  <Item>...</Item>
+  <Item>Item 1</Item>
+  <Item>Item 2</Item>
 <Row>
 ```
