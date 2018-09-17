@@ -15,11 +15,15 @@ const Column = (props) => {
     const { children } = props;
     if (children)
       // 👇 The <Parent /> renders it's children, but passes in props.gutter as the gutter to each child
-      return React.Children.map(children, (child) =>
-        React.cloneElement(child, {
-          xRay: props.xRay
-        })
-      );
+      return React.Children.map(children, (child) => {
+        if (typeof child !== "string") {
+          return React.cloneElement(child, {
+            xRay: props.xRay
+          });
+        } else {
+          return child;
+        }
+      });
     return null;
   };
 

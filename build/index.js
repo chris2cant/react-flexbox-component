@@ -349,7 +349,9 @@ var getAlignItem = function getAlignItem(props) {
     case "start":
       return "flex-start";
     case "end":
-      return "flex-start";
+      return "flex-end";
+    case "flex-start":
+    case "flex-end":
     case "center":
     case "baseline":
     case "stretch":
@@ -365,7 +367,9 @@ var getJustifyContent = function getJustifyContent(props) {
     case "start":
       return "flex-start";
     case "end":
-      return "flex-start";
+      return "flex-end";
+    case "flex-start":
+    case "flex-end":
     case "space-between":
     case "space-around":
     case "space-evenly":
@@ -382,6 +386,8 @@ var getAlignContent = function getAlignContent(props) {
       return "flex-start";
     case "end":
       return "flex-end";
+    case "flex-start":
+    case "flex-end":
     case "center":
     case "space-between":
     case "space-around":
@@ -428,9 +434,9 @@ var ItemStyled = exports.ItemStyled = (0, _styledComponents2.default)(Flex)(_tem
 var ColumnStyled = exports.ColumnStyled = (0, _styledComponents2.default)(Flex)(_templateObject5, function (props) {
   return props.xRay ? "lightblue" : null;
 }, function (props) {
-  return props.gutter;
+  return props.gutter / 2;
 }, function (props) {
-  return props.gutter;
+  return props.gutter / 2;
 });
 
 var RowStyled = exports.RowStyled = (0, _styledComponents2.default)(Flex)(_templateObject6, function (props) {
@@ -2880,9 +2886,13 @@ var Row = function Row(props) {
     if (children)
       // 👇 The <Parent /> renders it's children, but passes in props.gutter as the gutter to each child
       return _react2.default.Children.map(children, function (child) {
-        return _react2.default.cloneElement(child, {
-          xRay: props.xRay
-        });
+        if (typeof child !== "string") {
+          return _react2.default.cloneElement(child, {
+            xRay: props.xRay
+          });
+        } else {
+          return child;
+        }
       });
     return null;
   };
@@ -5965,9 +5975,13 @@ var Column = function Column(props) {
     if (children)
       // 👇 The <Parent /> renders it's children, but passes in props.gutter as the gutter to each child
       return _react2.default.Children.map(children, function (child) {
-        return _react2.default.cloneElement(child, {
-          xRay: props.xRay
-        });
+        if (typeof child !== "string") {
+          return _react2.default.cloneElement(child, {
+            xRay: props.xRay
+          });
+        } else {
+          return child;
+        }
       });
     return null;
   };
