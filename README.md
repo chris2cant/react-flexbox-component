@@ -37,13 +37,13 @@ export default MyComponent;
 ## Usage
 
 ```jsx
-// Direction : Row
+{/* Direction : Row */}
 <Row>...</Row>
 
-// Direction : Column
+{/* Direction : Column */}
 <Column>...</Column>
 
-// Flex item
+{/* Flex item */}
 <Item>...</Item>
 ```
 
@@ -62,14 +62,14 @@ xl >= 1920
 Example
 ```jsx
 <Row>
-  // Auto width for all props xs sm md lg xl
+  {/* Auto width for all props xs sm md lg xl */}
   <Item xs>Item 1</Item>
 
-  // @media (min-width: 0) flex-grow: 2;
+  {/* @media (min-width: 0) flex-grow: 2; */}
   <Item xs={2}>Item 2</Item>
 
-  // @media (min-width: 960) {flex-grow: 2};
-  // @media (min-width: 1280) {flex-grow: 4};
+  {/* @media (min-width: 960) {flex-grow: 2}; */}
+  {/* @media (min-width: 1280) {flex-grow: 4}; */}
   <Item md={2} lg={4}>Item 3</Item>
 </Row>
 ```
@@ -93,12 +93,12 @@ Default : null
 Add a `margin` between boxes in pixel. Allowed for `Row` and `Column` and applied on direct children.
 
 ```jsx
-// Margin of 8px between Item 1 and Item 2
+{/* Margin of 8px between Item 1 and Item 2 */}
 <Row gutter={8}>
   <Item>Item 1</Item>
   <Item>Item 2</Item>
 <Row>
-// Margin of 16px between Item 3, Row and Div 1
+{/* Margin of 16px between Item 3, Row and Div 1 */}
 <Column gutter={16}>
   <Item>Item 3</Item>
   <Row>
@@ -146,12 +146,12 @@ Value : `no-wrap` | `wrap` | `wrap-reverse`
 Default : null
 
 ```jsx
-// flex-wrap: wrap-reverse
+{/* flex-wrap: wrap-reverse */}
 <Row wrap="wrap-reverse">
   <Item>Item 1</Item>
   <Item>Item 2</Item>
 <Row>
-// flex-wrap: wrap
+{/* flex-wrap: wrap */}
 <Row wrap>
   <Item>Item 3</Item>
   <Item>Item 4</Item>
