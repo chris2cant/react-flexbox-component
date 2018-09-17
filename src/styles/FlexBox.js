@@ -7,7 +7,9 @@ const getAlignItem = (props) => {
     case "start":
       return "flex-start";
     case "end":
-      return "flex-start";
+      return "flex-end";
+    case "flex-start":
+    case "flex-end":
     case "center":
     case "baseline":
     case "stretch":
@@ -23,7 +25,9 @@ const getJustifyContent = (props) => {
     case "start":
       return "flex-start";
     case "end":
-      return "flex-start";
+      return "flex-end";
+    case "flex-start":
+    case "flex-end":
     case "space-between":
     case "space-around":
     case "space-evenly":
@@ -40,6 +44,8 @@ const getAlignContent = (props) => {
       return "flex-start";
     case "end":
       return "flex-end";
+    case "flex-start":
+    case "flex-end":
     case "center":
     case "space-between":
     case "space-around":
@@ -93,8 +99,8 @@ export const ColumnStyled = styled(Flex)`
   background-color: ${(props) => (props.xRay ? "lightblue" : null)};
   flex-direction: column;
   > div {
-    margin-top: ${(props) => props.gutter}px;
-    margin-bottom: ${(props) => props.gutter}px;
+    margin-top: ${(props) => props.gutter / 2}px;
+    margin-bottom: ${(props) => props.gutter / 2}px;
     &:first-child {
       margin-top: 0px;
     }
