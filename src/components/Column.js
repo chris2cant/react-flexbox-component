@@ -7,7 +7,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-  xRay: null
+  xRay: false
 };
 
 const Column = (props) => {
@@ -29,7 +29,7 @@ const Column = (props) => {
 
   return (
     <ColumnStyled {...props}>
-      {props.xRay ? renderChildren() : props.children}
+      {props.xRay === true ? renderChildren() : props.children}
     </ColumnStyled>
   );
 };

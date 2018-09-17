@@ -2876,7 +2876,7 @@ var propTypes = {
 };
 
 var defaultProps = {
-  xRay: null
+  xRay: false
 };
 
 var Row = function Row(props) {
@@ -2900,7 +2900,7 @@ var Row = function Row(props) {
   return _react2.default.createElement(
     _FlexBox.RowStyled,
     props,
-    renderChildren()
+    props.xRay === true ? renderChildren() : props.children
   );
 };
 
@@ -5965,7 +5965,7 @@ var propTypes = {
 };
 
 var defaultProps = {
-  xRay: null
+  xRay: false
 };
 
 var Column = function Column(props) {
@@ -5989,7 +5989,7 @@ var Column = function Column(props) {
   return _react2.default.createElement(
     _FlexBox.ColumnStyled,
     props,
-    props.xRay ? renderChildren() : props.children
+    props.xRay === true ? renderChildren() : props.children
   );
 };
 

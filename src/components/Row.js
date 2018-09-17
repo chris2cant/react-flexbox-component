@@ -7,7 +7,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-  xRay: null
+  xRay: false
 };
 
 const Row = (props) => {
@@ -29,7 +29,7 @@ const Row = (props) => {
 
   return (
     <RowStyled {...props}>
-      {props.xRay ? renderChildren() : props.children}
+      {props.xRay === true ? renderChildren() : props.children}
     </RowStyled>
   );
 };
