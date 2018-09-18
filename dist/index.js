@@ -60,74 +60,74 @@ var Content = styled__default.div(_templateObject2, function (props) {
   return props.xs && media.xs(_templateObject7);
 });
 
-var _templateObject$1 = taggedTemplateLiteral(["\n  border: ", ";\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ", ";\n  flex: 0 1 auto;\n  align-content: ", ";\n  justify-content: ", ";\n  align-items: ", ";\n  flex-grow: ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n"], ["\n  border: ", ";\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ", ";\n  flex: 0 1 auto;\n  align-content: ", ";\n  justify-content: ", ";\n  align-items: ", ";\n  flex-grow: ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n"]),
-    _templateObject2$1 = taggedTemplateLiteral(["flex-grow: 1;"], ["flex-grow: 1;"]),
-    _templateObject3$1 = taggedTemplateLiteral(["flex-grow: ", ";"], ["flex-grow: ", ";"]),
-    _templateObject4$1 = taggedTemplateLiteral(["\n  border: 0;\n  background-color: rgba(0, 0, 0, 0.12);\n  align-self: stretch;\n"], ["\n  border: 0;\n  background-color: rgba(0, 0, 0, 0.12);\n  align-self: stretch;\n"]),
-    _templateObject5$1 = taggedTemplateLiteral(["\n  background-color: ", ";\n  align-self: ", ";\n"], ["\n  background-color: ", ";\n  align-self: ", ";\n"]),
-    _templateObject6$1 = taggedTemplateLiteral(["\n  background-color: ", ";\n  flex-direction: column;\n\n  > div {\n    margin-top: ", "px;\n    margin-bottom: ", "px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n  ", " {\n    height: 1px;\n    margin: 0;\n  }\n"], ["\n  background-color: ", ";\n  flex-direction: column;\n\n  > div {\n    margin-top: ", "px;\n    margin-bottom: ", "px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n  ", " {\n    height: 1px;\n    margin: 0;\n  }\n"]),
-    _templateObject7$1 = taggedTemplateLiteral(["\n  background-color: ", ";\n  > div {\n    margin-left: ", "px;\n    margin-right: ", "px;\n    &:first-child {\n      margin-left: 0px;\n    }\n    &:last-child {\n      margin-right: 0px;\n    }\n  }\n  ", " {\n    width: 1px;\n    margin: 0;\n  }\n  flex-direction: row;\n"], ["\n  background-color: ", ";\n  > div {\n    margin-left: ", "px;\n    margin-right: ", "px;\n    &:first-child {\n      margin-left: 0px;\n    }\n    &:last-child {\n      margin-right: 0px;\n    }\n  }\n  ", " {\n    width: 1px;\n    margin: 0;\n  }\n  flex-direction: row;\n"]);
+var _templateObject$1 = taggedTemplateLiteral(['\n  border: ', ';\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ', ';\n  flex: 0 1 auto;\n  align-content: ', ';\n  justify-content: ', ';\n  align-items: ', ';\n  flex-grow: ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n'], ['\n  border: ', ';\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ', ';\n  flex: 0 1 auto;\n  align-content: ', ';\n  justify-content: ', ';\n  align-items: ', ';\n  flex-grow: ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n']),
+    _templateObject2$1 = taggedTemplateLiteral(['flex-grow: 1;'], ['flex-grow: 1;']),
+    _templateObject3$1 = taggedTemplateLiteral(['flex-grow: ', ';'], ['flex-grow: ', ';']),
+    _templateObject4$1 = taggedTemplateLiteral(['\n  border: 0;\n  background-color: rgba(0, 0, 0, 0.12);\n  align-self: stretch;\n'], ['\n  border: 0;\n  background-color: rgba(0, 0, 0, 0.12);\n  align-self: stretch;\n']),
+    _templateObject5$1 = taggedTemplateLiteral(['\n  background-color: ', ';\n  align-self: ', ';\n'], ['\n  background-color: ', ';\n  align-self: ', ';\n']),
+    _templateObject6$1 = taggedTemplateLiteral(['\n  background-color: ', ';\n  flex-direction: column;\n\n  > div {\n    margin-top: ', 'px;\n    margin-bottom: ', 'px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n  > ', ' {\n    height: 1px;\n    margin: 0;\n  }\n'], ['\n  background-color: ', ';\n  flex-direction: column;\n\n  > div {\n    margin-top: ', 'px;\n    margin-bottom: ', 'px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n  > ', ' {\n    height: 1px;\n    margin: 0;\n  }\n']),
+    _templateObject7$1 = taggedTemplateLiteral(['\n  background-color: ', ';\n  > div {\n    margin-left: ', 'px;\n    margin-right: ', 'px;\n    &:first-child {\n      margin-left: 0px;\n    }\n    &:last-child {\n      margin-right: 0px;\n    }\n  }\n  > ', ' {\n    width: 1px;\n    margin: 0;\n  }\n  flex-direction: row;\n'], ['\n  background-color: ', ';\n  > div {\n    margin-left: ', 'px;\n    margin-right: ', 'px;\n    &:first-child {\n      margin-left: 0px;\n    }\n    &:last-child {\n      margin-right: 0px;\n    }\n  }\n  > ', ' {\n    width: 1px;\n    margin: 0;\n  }\n  flex-direction: row;\n']);
 
 var getAlignItem = function getAlignItem(props) {
   // console.warn('[getAlignItem]');
   switch (props.align) {
-    case "start":
-      return "flex-start";
-    case "end":
-      return "flex-end";
-    case "flex-start":
-    case "flex-end":
-    case "center":
-    case "baseline":
-    case "stretch":
+    case 'start':
+      return 'flex-start';
+    case 'end':
+      return 'flex-end';
+    case 'flex-start':
+    case 'flex-end':
+    case 'center':
+    case 'baseline':
+    case 'stretch':
       return props.align;
     default:
-      return "flex-start";
+      return 'flex-start';
   }
 };
 
 var getJustifyContent = function getJustifyContent(props) {
   // console.warn('[getJustifyContent]');
   switch (props.justify) {
-    case "start":
-      return "flex-start";
-    case "end":
-      return "flex-end";
-    case "flex-start":
-    case "flex-end":
-    case "space-between":
-    case "space-around":
-    case "space-evenly":
+    case 'start':
+      return 'flex-start';
+    case 'end':
+      return 'flex-end';
+    case 'flex-start':
+    case 'flex-end':
+    case 'space-between':
+    case 'space-around':
+    case 'space-evenly':
       return props.justify;
     default:
-      return "flex-start";
+      return 'flex-start';
   }
 };
 
 var getAlignContent = function getAlignContent(props) {
   // console.warn('[getAlignContent]');
   switch (props.content) {
-    case "start":
-      return "flex-start";
-    case "end":
-      return "flex-end";
-    case "flex-start":
-    case "flex-end":
-    case "center":
-    case "space-between":
-    case "space-around":
-    case "stretch":
+    case 'start':
+      return 'flex-start';
+    case 'end':
+      return 'flex-end';
+    case 'flex-start':
+    case 'flex-end':
+    case 'center':
+    case 'space-between':
+    case 'space-around':
+    case 'stretch':
       return props.content;
     default:
-      return "flex-start";
+      return 'flex-start';
   }
 };
 
 var getFlexWrap = function getFlexWrap(props) {
-  if (props.wrap === "no-wrap" || props.wrap === "wrap" || props.wrap === "wrap-reverse") {
+  if (props.wrap === 'no-wrap' || props.wrap === 'wrap' || props.wrap === 'wrap-reverse') {
     return props.wrap;
   }
-  if (props.wrap === true) return "wrap";
+  if (props.wrap === true) return 'wrap';
   return null;
 };
 
@@ -137,7 +137,7 @@ var getFlexGrow = function getFlexGrow(props) {
 };
 
 var Flex = styled__default.div(_templateObject$1, function (props) {
-  return props.xRay ? "1px solid blue" : null;
+  return props.xRay ? '1px solid blue' : null;
 }, getFlexWrap, getAlignContent, getJustifyContent, getAlignItem, getFlexGrow, function (props) {
   return props.auto && media.xs(_templateObject2$1);
 }, function (props) {
@@ -155,13 +155,13 @@ var Flex = styled__default.div(_templateObject$1, function (props) {
 var Divider = styled__default.div(_templateObject4$1);
 
 var ItemStyled = styled__default(Flex)(_templateObject5$1, function (props) {
-  return props.xRay ? "lightgreen" : null;
+  return props.xRay ? 'lightgreen' : null;
 }, function (props) {
   return props.align;
 });
 
 var ColumnStyled = styled__default(Flex)(_templateObject6$1, function (props) {
-  return props.xRay ? "lightblue" : null;
+  return props.xRay ? 'lightblue' : null;
 }, function (props) {
   return props.gutter / 2;
 }, function (props) {
@@ -169,7 +169,7 @@ var ColumnStyled = styled__default(Flex)(_templateObject6$1, function (props) {
 }, Divider);
 
 var RowStyled = styled__default(Flex)(_templateObject7$1, function (props) {
-  return props.xRay ? "salmon" : null;
+  return props.xRay ? 'salmon' : null;
 }, function (props) {
   return props.gutter || 0;
 }, function (props) {
