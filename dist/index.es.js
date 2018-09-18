@@ -1,6 +1,4 @@
 import styled, { css } from 'styled-components';
-import React from 'react';
-import PropTypes from 'prop-types';
 
 var taggedTemplateLiteral = function (strings, raw) {
   return Object.freeze(Object.defineProperties(strings, {
@@ -58,9 +56,10 @@ var Content = styled.div(_templateObject2, function (props) {
 var _templateObject$1 = taggedTemplateLiteral(["\n  border: ", ";\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ", ";\n  flex: 0 1 auto;\n  align-content: ", ";\n  justify-content: ", ";\n  align-items: ", ";\n  flex-grow: ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n"], ["\n  border: ", ";\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ", ";\n  flex: 0 1 auto;\n  align-content: ", ";\n  justify-content: ", ";\n  align-items: ", ";\n  flex-grow: ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n"]),
     _templateObject2$1 = taggedTemplateLiteral(["flex-grow: 1;"], ["flex-grow: 1;"]),
     _templateObject3$1 = taggedTemplateLiteral(["flex-grow: ", ";"], ["flex-grow: ", ";"]),
-    _templateObject4$1 = taggedTemplateLiteral(["\n  background-color: ", ";\n  align-self: ", ";\n"], ["\n  background-color: ", ";\n  align-self: ", ";\n"]),
-    _templateObject5$1 = taggedTemplateLiteral(["\n  background-color: ", ";\n  flex-direction: column;\n  > div {\n    margin-top: ", "px;\n    margin-bottom: ", "px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n"], ["\n  background-color: ", ";\n  flex-direction: column;\n  > div {\n    margin-top: ", "px;\n    margin-bottom: ", "px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n"]),
-    _templateObject6$1 = taggedTemplateLiteral(["\n  background-color: ", ";\n  > div {\n    margin-left: ", "px;\n    margin-right: ", "px;\n    &:first-child {\n      margin-left: 0px;\n    }\n    &:last-child {\n      margin-right: 0px;\n    }\n  }\n  flex-direction: row;\n"], ["\n  background-color: ", ";\n  > div {\n    margin-left: ", "px;\n    margin-right: ", "px;\n    &:first-child {\n      margin-left: 0px;\n    }\n    &:last-child {\n      margin-right: 0px;\n    }\n  }\n  flex-direction: row;\n"]);
+    _templateObject4$1 = taggedTemplateLiteral(["\n  border: 0;\n  background-color: rgba(0, 0, 0, 0.12);\n  align-self: stretch;\n"], ["\n  border: 0;\n  background-color: rgba(0, 0, 0, 0.12);\n  align-self: stretch;\n"]),
+    _templateObject5$1 = taggedTemplateLiteral(["\n  background-color: ", ";\n  align-self: ", ";\n"], ["\n  background-color: ", ";\n  align-self: ", ";\n"]),
+    _templateObject6$1 = taggedTemplateLiteral(["\n  background-color: ", ";\n  flex-direction: column;\n\n  > div {\n    margin-top: ", "px;\n    margin-bottom: ", "px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n  ", " {\n    height: 1px;\n    margin: 0;\n  }\n"], ["\n  background-color: ", ";\n  flex-direction: column;\n\n  > div {\n    margin-top: ", "px;\n    margin-bottom: ", "px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n  ", " {\n    height: 1px;\n    margin: 0;\n  }\n"]),
+    _templateObject7$1 = taggedTemplateLiteral(["\n  background-color: ", ";\n  > div {\n    margin-left: ", "px;\n    margin-right: ", "px;\n    &:first-child {\n      margin-left: 0px;\n    }\n    &:last-child {\n      margin-right: 0px;\n    }\n  }\n  ", " {\n    width: 1px;\n    margin: 0;\n  }\n  flex-direction: row;\n"], ["\n  background-color: ", ";\n  > div {\n    margin-left: ", "px;\n    margin-right: ", "px;\n    &:first-child {\n      margin-left: 0px;\n    }\n    &:last-child {\n      margin-right: 0px;\n    }\n  }\n  ", " {\n    width: 1px;\n    margin: 0;\n  }\n  flex-direction: row;\n"]);
 
 var getAlignItem = function getAlignItem(props) {
   // console.warn('[getAlignItem]');
@@ -118,7 +117,9 @@ var getAlignContent = function getAlignContent(props) {
 };
 
 var getFlexWrap = function getFlexWrap(props) {
-  if (props.wrap === "no-wrap" || props.wrap === "wrap" || props.wrap === "wrap-reverse") return props.wrap;
+  if (props.wrap === "no-wrap" || props.wrap === "wrap" || props.wrap === "wrap-reverse") {
+    return props.wrap;
+  }
   if (props.wrap === true) return "wrap";
   return null;
 };
@@ -144,103 +145,29 @@ var Flex = styled.div(_templateObject$1, function (props) {
   return props.xs && media.xs(_templateObject3$1, +props.xs);
 });
 
-var ItemStyled = styled(Flex)(_templateObject4$1, function (props) {
+var Divider = styled.div(_templateObject4$1);
+
+var ItemStyled = styled(Flex)(_templateObject5$1, function (props) {
   return props.xRay ? "lightgreen" : null;
 }, function (props) {
   return props.align;
 });
 
-var ColumnStyled = styled(Flex)(_templateObject5$1, function (props) {
+var ColumnStyled = styled(Flex)(_templateObject6$1, function (props) {
   return props.xRay ? "lightblue" : null;
 }, function (props) {
   return props.gutter / 2;
 }, function (props) {
   return props.gutter / 2;
-});
+}, Divider);
 
-var RowStyled = styled(Flex)(_templateObject6$1, function (props) {
+var RowStyled = styled(Flex)(_templateObject7$1, function (props) {
   return props.xRay ? "salmon" : null;
 }, function (props) {
-  return props.gutter;
+  return props.gutter || 0;
 }, function (props) {
-  return props.gutter;
-});
+  return props.gutter || 0;
+}, Divider);
 
-var propTypes = {
-  xRay: PropTypes.bool
-};
-
-var defaultProps = {
-  xRay: false
-};
-
-var Row = function Row(props) {
-  var renderChildren = function renderChildren() {
-    var children = props.children;
-
-    if (children)
-      // 👇 The <Parent /> renders it's children, but passes in props.gutter as the gutter to each child
-      return React.Children.map(children, function (child) {
-        if (typeof child !== "string") {
-          return React.cloneElement(child, {
-            xRay: props.xRay
-          });
-        } else {
-          return child;
-        }
-      });
-    return null;
-  };
-
-  return React.createElement(
-    RowStyled,
-    props,
-    props.xRay === true ? renderChildren() : props.children
-  );
-};
-
-Row.propTypes = propTypes;
-Row.defaultProps = defaultProps;
-
-var propTypes$1 = {
-  xRay: PropTypes.bool
-};
-
-var defaultProps$1 = {
-  xRay: false
-};
-
-var Column = function Column(props) {
-  var renderChildren = function renderChildren() {
-    var children = props.children;
-
-    if (children)
-      // 👇 The <Parent /> renders it's children, but passes in props.gutter as the gutter to each child
-      return React.Children.map(children, function (child) {
-        if (typeof child !== "string") {
-          return React.cloneElement(child, {
-            xRay: props.xRay
-          });
-        } else {
-          return child;
-        }
-      });
-    return null;
-  };
-
-  return React.createElement(
-    ColumnStyled,
-    props,
-    props.xRay === true ? renderChildren() : props.children
-  );
-};
-
-Column.propTypes = propTypes$1;
-Column.defaultProps = defaultProps$1;
-
-var item = function item(props) {
-  return React.createElement(ItemStyled, props);
-};
-
-export { Row, Column, item as Item };
+export { Divider, RowStyled as Row, ColumnStyled as Column, ItemStyled as Item };
 //# sourceMappingURL=index.es.js.map
