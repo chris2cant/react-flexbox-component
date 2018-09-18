@@ -125,8 +125,8 @@ export const ColumnStyled = styled(Flex)`
 export const RowStyled = styled(Flex)`
   background-color: ${(props) => (props.xRay ? 'salmon' : null)};
   > div {
-    margin-left: ${(props) => props.gutter || 0}px;
-    margin-right: ${(props) => props.gutter || 0}px;
+    margin-left: ${(props) => props.gutter / 2 || 0}px;
+    margin-right: ${(props) => props.gutter / 2 || 0}px;
     &:first-child {
       margin-left: 0px;
     }
