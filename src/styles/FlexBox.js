@@ -61,8 +61,9 @@ const getFlexWrap = (props) => {
     props.wrap === "no-wrap" ||
     props.wrap === "wrap" ||
     props.wrap === "wrap-reverse"
-  )
+  ) {
     return props.wrap;
+  }
   if (props.wrap === true) return "wrap";
   return null;
 };
@@ -90,6 +91,12 @@ const Flex = styled.div`
   ${(props) => props.xs && media.xs`flex-grow: ${+props.xs};`};
 `;
 
+export const Divider = styled.div`
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.12);
+  align-self: stretch;
+`;
+
 export const ItemStyled = styled(Flex)`
   background-color: ${(props) => (props.xRay ? "lightgreen" : null)};
   align-self: ${(props) => props.align};
@@ -98,6 +105,7 @@ export const ItemStyled = styled(Flex)`
 export const ColumnStyled = styled(Flex)`
   background-color: ${(props) => (props.xRay ? "lightblue" : null)};
   flex-direction: column;
+
   > div {
     margin-top: ${(props) => props.gutter / 2}px;
     margin-bottom: ${(props) => props.gutter / 2}px;
@@ -108,19 +116,27 @@ export const ColumnStyled = styled(Flex)`
       margin-bottom: 0px;
     }
   }
+  ${Divider} {
+    height: 1px;
+    margin: 0;
+  }
 `;
 
 export const RowStyled = styled(Flex)`
   background-color: ${(props) => (props.xRay ? "salmon" : null)};
   > div {
-    margin-left: ${(props) => props.gutter}px;
-    margin-right: ${(props) => props.gutter}px;
+    margin-left: ${(props) => props.gutter || 0}px;
+    margin-right: ${(props) => props.gutter || 0}px;
     &:first-child {
       margin-left: 0px;
     }
     &:last-child {
       margin-right: 0px;
     }
+  }
+  ${Divider} {
+    width: 1px;
+    margin: 0;
   }
   flex-direction: row;
 `;

@@ -1,3 +1,6 @@
-export { default as Row } from "./components/Row";
-export { default as Column } from "./components/Column";
-export { default as Item } from "./components/Item";
+export {
+  Divider,
+  RowStyled as Row,
+  ColumnStyled as Column,
+  ItemStyled as Item
+} from './styles/FlexBox';

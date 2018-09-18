@@ -1,6 +1,6 @@
 {
   "name": "react-flexbox-component",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "",
   "author": "Christophe de Canteloube",
   "license": "MIT",
@@ -19,7 +19,9 @@
     "start": "rollup -c -w",
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -54,9 +56,15 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
     "rollup-plugin-url": "^1.4.0",
-    "styled-components": "^3.4.8"
+    "styled-components": "^3.4.8",
+    "@storybook/react": "^3.4.11",
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addon-links": "^3.4.11",
+    "@storybook/addons": "^3.4.11",
+    "babel-runtime": "^6.26.0"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {}
 }
