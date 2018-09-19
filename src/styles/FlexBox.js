@@ -83,6 +83,7 @@ const Flex = styled.div`
   justify-content: ${getJustifyContent};
   align-items: ${getAlignItem};
   flex-grow: ${getFlexGrow};
+  align-self: ${(props) => props.alignSelf};
   ${(props) => props.auto && media.xs`flex-grow: 1;`};
   ${(props) => props.xl && media.xl`flex-grow: ${+props.xl};`};
   ${(props) => props.lg && media.lg`flex-grow: ${+props.lg};`};
@@ -105,7 +106,6 @@ export const ItemStyled = styled(Flex)`
 export const ColumnStyled = styled(Flex)`
   background-color: ${(props) => (props.xRay ? 'lightblue' : null)};
   flex-direction: column;
-
   > div {
     margin-top: ${(props) => props.gutter / 2}px;
     margin-bottom: ${(props) => props.gutter / 2}px;

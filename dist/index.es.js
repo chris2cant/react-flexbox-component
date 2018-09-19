@@ -53,12 +53,12 @@ var Content = styled.div(_templateObject2, function (props) {
   return props.xs && media.xs(_templateObject7);
 });
 
-var _templateObject$1 = taggedTemplateLiteral(['\n  border: ', ';\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ', ';\n  flex: 0 1 auto;\n  align-content: ', ';\n  justify-content: ', ';\n  align-items: ', ';\n  flex-grow: ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n'], ['\n  border: ', ';\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ', ';\n  flex: 0 1 auto;\n  align-content: ', ';\n  justify-content: ', ';\n  align-items: ', ';\n  flex-grow: ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n']),
+var _templateObject$1 = taggedTemplateLiteral(['\n  border: ', ';\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ', ';\n  flex: 0 1 auto;\n  align-content: ', ';\n  justify-content: ', ';\n  align-items: ', ';\n  flex-grow: ', ';\n  align-self: ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n'], ['\n  border: ', ';\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ', ';\n  flex: 0 1 auto;\n  align-content: ', ';\n  justify-content: ', ';\n  align-items: ', ';\n  flex-grow: ', ';\n  align-self: ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n']),
     _templateObject2$1 = taggedTemplateLiteral(['flex-grow: 1;'], ['flex-grow: 1;']),
     _templateObject3$1 = taggedTemplateLiteral(['flex-grow: ', ';'], ['flex-grow: ', ';']),
     _templateObject4$1 = taggedTemplateLiteral(['\n  border: 0;\n  background-color: rgba(0, 0, 0, 0.12);\n  align-self: stretch;\n'], ['\n  border: 0;\n  background-color: rgba(0, 0, 0, 0.12);\n  align-self: stretch;\n']),
     _templateObject5$1 = taggedTemplateLiteral(['\n  background-color: ', ';\n  align-self: ', ';\n'], ['\n  background-color: ', ';\n  align-self: ', ';\n']),
-    _templateObject6$1 = taggedTemplateLiteral(['\n  background-color: ', ';\n  flex-direction: column;\n\n  > div {\n    margin-top: ', 'px;\n    margin-bottom: ', 'px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n  > ', ' {\n    height: 1px;\n    margin: 0;\n  }\n'], ['\n  background-color: ', ';\n  flex-direction: column;\n\n  > div {\n    margin-top: ', 'px;\n    margin-bottom: ', 'px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n  > ', ' {\n    height: 1px;\n    margin: 0;\n  }\n']),
+    _templateObject6$1 = taggedTemplateLiteral(['\n  background-color: ', ';\n  flex-direction: column;\n  > div {\n    margin-top: ', 'px;\n    margin-bottom: ', 'px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n  > ', ' {\n    height: 1px;\n    margin: 0;\n  }\n'], ['\n  background-color: ', ';\n  flex-direction: column;\n  > div {\n    margin-top: ', 'px;\n    margin-bottom: ', 'px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n  > ', ' {\n    height: 1px;\n    margin: 0;\n  }\n']),
     _templateObject7$1 = taggedTemplateLiteral(['\n  background-color: ', ';\n  > div {\n    margin-left: ', 'px;\n    margin-right: ', 'px;\n    &:first-child {\n      margin-left: 0px;\n    }\n    &:last-child {\n      margin-right: 0px;\n    }\n  }\n  > ', ' {\n    width: 1px;\n    margin: 0;\n  }\n  flex-direction: row;\n'], ['\n  background-color: ', ';\n  > div {\n    margin-left: ', 'px;\n    margin-right: ', 'px;\n    &:first-child {\n      margin-left: 0px;\n    }\n    &:last-child {\n      margin-right: 0px;\n    }\n  }\n  > ', ' {\n    width: 1px;\n    margin: 0;\n  }\n  flex-direction: row;\n']);
 
 var getAlignItem = function getAlignItem(props) {
@@ -132,6 +132,8 @@ var getFlexGrow = function getFlexGrow(props) {
 var Flex = styled.div(_templateObject$1, function (props) {
   return props.xRay ? '1px solid blue' : null;
 }, getFlexWrap, getAlignContent, getJustifyContent, getAlignItem, getFlexGrow, function (props) {
+  return props.alignSelf;
+}, function (props) {
   return props.auto && media.xs(_templateObject2$1);
 }, function (props) {
   return props.xl && media.xl(_templateObject3$1, +props.xl);
@@ -164,9 +166,9 @@ var ColumnStyled = styled(Flex)(_templateObject6$1, function (props) {
 var RowStyled = styled(Flex)(_templateObject7$1, function (props) {
   return props.xRay ? 'salmon' : null;
 }, function (props) {
-  return props.gutter || 0;
+  return props.gutter / 2 || 0;
 }, function (props) {
-  return props.gutter || 0;
+  return props.gutter / 2 || 0;
 }, Divider);
 
 export { Divider, RowStyled as Row, ColumnStyled as Column, ItemStyled as Item };
