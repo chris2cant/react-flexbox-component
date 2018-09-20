@@ -53,7 +53,7 @@ var Content = styled.div(_templateObject2, function (props) {
   return props.xs && media.xs(_templateObject7);
 });
 
-var _templateObject$1 = taggedTemplateLiteral(['\n  border: ', ';\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ', ';\n  flex: 0 1 auto;\n  align-content: ', ';\n  justify-content: ', ';\n  align-items: ', ';\n  flex-grow: ', ';\n  align-self: ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n'], ['\n  border: ', ';\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ', ';\n  flex: 0 1 auto;\n  align-content: ', ';\n  justify-content: ', ';\n  align-items: ', ';\n  flex-grow: ', ';\n  align-self: ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n']),
+var _templateObject$1 = taggedTemplateLiteral(['\n  border: ', ';\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ', ';\n  flex: 0 1 auto;\n  align-content: ', ';\n  justify-content: ', ';\n  align-items: ', ';\n  flex-grow: ', ';\n  flex-basis: ', ';\n  align-self: ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n'], ['\n  border: ', ';\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ', ';\n  flex: 0 1 auto;\n  align-content: ', ';\n  justify-content: ', ';\n  align-items: ', ';\n  flex-grow: ', ';\n  flex-basis: ', ';\n  align-self: ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n']),
     _templateObject2$1 = taggedTemplateLiteral(['flex-grow: 1; flex-basis: 0'], ['flex-grow: 1; flex-basis: 0']),
     _templateObject3$1 = taggedTemplateLiteral(['flex-grow: ', '; flex-basis: 0'], ['flex-grow: ', '; flex-basis: 0']),
     _templateObject4$1 = taggedTemplateLiteral(['\n  border: 0;\n  background-color: rgba(0, 0, 0, 0.12);\n  align-self: stretch;\n'], ['\n  border: 0;\n  background-color: rgba(0, 0, 0, 0.12);\n  align-self: stretch;\n']),
@@ -132,6 +132,8 @@ var getFlexGrow = function getFlexGrow(props) {
 var Flex = styled.div(_templateObject$1, function (props) {
   return props.xRay ? '1px solid blue' : null;
 }, getFlexWrap, getAlignContent, getJustifyContent, getAlignItem, getFlexGrow, function (props) {
+  return getFlexGrow(props) !== null ? 0 : 'auto';
+}, function (props) {
   return props.alignSelf;
 }, function (props) {
   return props.auto && media.xs(_templateObject2$1);

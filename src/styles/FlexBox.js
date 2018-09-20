@@ -83,6 +83,7 @@ const Flex = styled.div`
   justify-content: ${getJustifyContent};
   align-items: ${getAlignItem};
   flex-grow: ${getFlexGrow};
+  flex-basis: ${(props) => (getFlexGrow(props) !== null ? 0 : 'auto')};
   align-self: ${(props) => props.alignSelf};
   ${(props) => props.auto && media.xs`flex-grow: 1; flex-basis: 0`};
   ${(props) => props.xl && media.xl`flex-grow: ${+props.xl}; flex-basis: 0`};
