@@ -84,12 +84,12 @@ const Flex = styled.div`
   align-items: ${getAlignItem};
   flex-grow: ${getFlexGrow};
   align-self: ${(props) => props.alignSelf};
-  ${(props) => props.auto && media.xs`flex-grow: 1;`};
-  ${(props) => props.xl && media.xl`flex-grow: ${+props.xl};`};
-  ${(props) => props.lg && media.lg`flex-grow: ${+props.lg};`};
-  ${(props) => props.md && media.md`flex-grow: ${+props.md};`};
-  ${(props) => props.sm && media.sm`flex-grow: ${+props.sm};`};
-  ${(props) => props.xs && media.xs`flex-grow: ${+props.xs};`};
+  ${(props) => props.auto && media.xs`flex-grow: 1; flex-basis: 0`};
+  ${(props) => props.xl && media.xl`flex-grow: ${+props.xl}; flex-basis: 0`};
+  ${(props) => props.lg && media.lg`flex-grow: ${+props.lg}; flex-basis: 0`};
+  ${(props) => props.md && media.md`flex-grow: ${+props.md}; flex-basis: 0`};
+  ${(props) => props.sm && media.sm`flex-grow: ${+props.sm}; flex-basis: 0`};
+  ${(props) => props.xs && media.xs`flex-grow: ${+props.xs}; flex-basis: 0`};
 `
 
 export const Divider = styled.div`

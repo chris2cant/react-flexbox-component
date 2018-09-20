@@ -61,8 +61,8 @@ var Content = styled__default.div(_templateObject2, function (props) {
 });
 
 var _templateObject$1 = taggedTemplateLiteral(['\n  border: ', ';\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ', ';\n  flex: 0 1 auto;\n  align-content: ', ';\n  justify-content: ', ';\n  align-items: ', ';\n  flex-grow: ', ';\n  align-self: ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n'], ['\n  border: ', ';\n  display: flex;\n  box-sizing: border-box;\n  flex-wrap: ', ';\n  flex: 0 1 auto;\n  align-content: ', ';\n  justify-content: ', ';\n  align-items: ', ';\n  flex-grow: ', ';\n  align-self: ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n  ', ';\n']),
-    _templateObject2$1 = taggedTemplateLiteral(['flex-grow: 1;'], ['flex-grow: 1;']),
-    _templateObject3$1 = taggedTemplateLiteral(['flex-grow: ', ';'], ['flex-grow: ', ';']),
+    _templateObject2$1 = taggedTemplateLiteral(['flex-grow: 1; flex-basis: 0'], ['flex-grow: 1; flex-basis: 0']),
+    _templateObject3$1 = taggedTemplateLiteral(['flex-grow: ', '; flex-basis: 0'], ['flex-grow: ', '; flex-basis: 0']),
     _templateObject4$1 = taggedTemplateLiteral(['\n  border: 0;\n  background-color: rgba(0, 0, 0, 0.12);\n  align-self: stretch;\n'], ['\n  border: 0;\n  background-color: rgba(0, 0, 0, 0.12);\n  align-self: stretch;\n']),
     _templateObject5$1 = taggedTemplateLiteral(['\n  background-color: ', ';\n  align-self: ', ';\n'], ['\n  background-color: ', ';\n  align-self: ', ';\n']),
     _templateObject6$1 = taggedTemplateLiteral(['\n  background-color: ', ';\n  flex-direction: column;\n  > div {\n    margin-top: ', 'px;\n    margin-bottom: ', 'px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n  > ', ' {\n    height: 1px;\n    margin: 0;\n  }\n'], ['\n  background-color: ', ';\n  flex-direction: column;\n  > div {\n    margin-top: ', 'px;\n    margin-bottom: ', 'px;\n    &:first-child {\n      margin-top: 0px;\n    }\n    &:last-child {\n      margin-bottom: 0px;\n    }\n  }\n  > ', ' {\n    height: 1px;\n    margin: 0;\n  }\n']),
