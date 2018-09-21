@@ -27,6 +27,7 @@ const getJustifyContent = (props) => {
     case 'end':
       return 'flex-end';
     case 'flex-start':
+    case 'center':
     case 'flex-end':
     case 'space-between':
     case 'space-around':
